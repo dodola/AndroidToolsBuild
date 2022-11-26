@@ -11,8 +11,8 @@ $(PLY_ANDROID_BUILD_DIR): $(ANDROID_CONFIG_SITE)
 	-mkdir $@
 	cd $@ && $(PLY_SRCS)/configure -v $(ANDROID_EXTRA_CONFIGURE_FLAGS) 
 
-PLY_COMMIT_HASH = fe80ec121676e4ab0e0750ca7888fe5877a73206
-PLY_REPO = git@github.com:dodola/ply-android.git
+PLY_COMMIT_HASH = 56c375f757816637d26300fa58988b00a989417d
+PLY_REPO = https://github.com/dodola/ply_android.git
 
 projects/ply/sources:
 	git clone $(PLY_REPO) $@
